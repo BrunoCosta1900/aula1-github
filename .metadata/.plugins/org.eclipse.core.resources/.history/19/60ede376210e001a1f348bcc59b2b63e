@@ -1,0 +1,47 @@
+package exercicioVetor;
+
+import java.util.Locale;
+import java.util.Scanner;
+import java.util.Vector;
+
+import entitiesVetor.ProgramaFuncionarios;
+
+public class Funcionarios {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Quantas operações seráo registradas?");
+
+		int n = sc.nextInt();
+
+		ProgramaFuncionarios[] vect = new ProgramaFuncionarios[n];
+
+		for (int i = 0; i < vect.length; i++) {
+
+			System.out.print("Id: ");
+			sc.nextLine();
+			int id = sc.nextInt();
+			sc.nextLine();
+			System.out.print("Nome:");
+			String nome = sc.nextLine();
+			System.out.println("Salário: ");
+			double salario = sc.nextDouble();
+			System.out.println();
+
+			if (vect[id] != null) {
+				vect[i] = new ProgramaFuncionarios(id, nome, salario);
+			} else {
+				vect[i] = new ProgramaFuncionarios(nome, salario);
+			}
+		}
+
+		for (int i = 0; i < vect.length; i++) {
+			System.out.println(vect[i]);
+		}
+		sc.close();
+	}
+
+}

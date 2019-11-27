@@ -1,0 +1,67 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Funcionario;
+
+public class Program4 {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Quantas operações deseja fazer?");
+		int n = sc.nextInt();
+
+		List<Funcionario> list = new ArrayList<>();
+
+		for (int i = 1; i <= n; i++) {
+			System.out.println("Operação " + i + ":");
+			System.out.print("Digite o Id do funcionário: ");
+			Integer id = sc.nextInt();
+			sc.nextLine();
+			System.out.print("Digite o nome do funcionário: ");
+			String nome = sc.nextLine();
+			System.out.print("Salário: ");
+			double salario = sc.nextDouble();
+			System.out.println();
+			list.add(new Funcionario(id, nome, salario));
+		}
+		System.out.println();
+		System.out.println("Deseja fazer algum acréscimo salarial (s/n)?");
+		char resp = sc.next().charAt(0);
+
+		while (resp != 'n') {
+			System.out.print("Digite o Id do funcionário a ser acrescido: ");
+			int id = sc.nextInt();
+			Funcionario prog = list.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
+			System.out.println();
+
+			if (prog == null) {
+				System.out.println("Id não existe, digite um Id válido.");
+
+			} else {
+				System.out.print("Digite a porcentagem a acrescentar: ");
+				double porcentagem = sc.nextDouble();
+				prog.acrescentar(porcentagem);
+			}
+		}
+
+		System.out.println("Deseja fazer um novo acréscimo salarial (s/n)?");
+		resp = sc.next().charAt(0);
+
+		System.out.println();
+		System.out.println("Lista: ");
+
+		for (Funcionario obj : list) {
+			System.out.println(obj);
+		}
+
+		sc.close();
+	}
+
+}

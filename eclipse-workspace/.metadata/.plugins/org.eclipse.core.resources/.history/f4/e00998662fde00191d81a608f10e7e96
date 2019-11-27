@@ -1,0 +1,7 @@
+package com.gmstudios.world;
+
+public class Tile {
+
+	public BufferedeImage TILE_FLOOR = 
+	
+}

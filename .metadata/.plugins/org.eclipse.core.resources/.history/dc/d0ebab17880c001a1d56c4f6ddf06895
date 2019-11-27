@@ -1,0 +1,37 @@
+package apploication;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Salario;
+
+public class Program3 {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		Salario salario = new Salario();
+
+		salario.name = sc.nextLine();
+		salario.grossSalary = sc.nextDouble();
+		salario.tax = sc.nextDouble();
+		
+		System.out.println("Name: "+ salario.name);
+		System.out.println("Gross salary: "+salario.grossSalary);
+		System.out.println("Tax: "+ salario.tax);
+		
+		System.out.print("Employee: "+salario);
+		System.out.println();
+		
+		System.out.println("Which percentage to increase salaary?");
+		double percentage =  sc.nextDouble();
+		salario.increaseSalary(percentage);
+		
+		System.out.println("Updated data: "+salario);
+		
+
+		sc.close();
+	}
+}

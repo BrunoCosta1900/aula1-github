@@ -1,0 +1,34 @@
+package application;
+
+import java.util.Scanner;
+
+import entities.Aluguel;
+
+public class Pensionato {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		Aluguel[] vect = new Aluguel[10];
+
+		System.out.println("Quantos estudantes?");
+		int estudantes = sc.nextInt();
+
+		for (int i = 1; i <= estudantes; i++) {
+			System.out.println("Aluguel núemro " + i + " :");
+			System.out.print("Digite o nome do estudante: ");
+			String nome = sc.nextLine();
+			System.out.println();
+			System.out.print("Email: ");
+			String email = sc.nextLine();
+			System.out.println();
+			System.out.print("Número do quarto: ");
+			int quarto = sc.nextInt();
+			System.out.println();
+			vect[quarto] = new Aluguel(nome, email);
+		}
+
+		sc.close();
+	}
+
+}

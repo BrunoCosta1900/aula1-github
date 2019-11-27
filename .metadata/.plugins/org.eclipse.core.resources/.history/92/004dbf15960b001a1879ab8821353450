@@ -1,0 +1,13 @@
+
+public class split {
+
+	public static void main(String[] args) {
+		// Operação split
+
+		String s = "potate apple lemon";
+
+		String[] vect = s.split(" ");
+
+	}
+
+}

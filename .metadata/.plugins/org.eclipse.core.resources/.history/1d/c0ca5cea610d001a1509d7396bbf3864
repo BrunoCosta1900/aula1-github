@@ -1,0 +1,39 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Banco;
+
+public class Program3 {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		Banco banco;
+
+		System.out.println("Número da conta: ");
+		int conta = sc.nextInt();
+		sc.nextLine();
+
+		System.out.println("Proprietário: ");
+		String nome = sc.nextLine();
+		System.out.println();
+
+		System.out.println("Deseja fazer um deposito inicial (y/n)?");
+		char resposta = sc.next().charAt(0);
+		if (resposta == 's') {
+			System.out.println("Quanto deseja depositar?");
+			double depositoInicial = sc.nextDouble();
+			banco = new Banco(conta, nome, depositoInicial);
+			System.out.println();
+		}
+		else {
+
+		}
+
+		sc.close();
+	}
+
+}

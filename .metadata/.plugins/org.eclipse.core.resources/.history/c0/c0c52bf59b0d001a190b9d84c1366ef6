@@ -1,0 +1,41 @@
+package exercicioVetor;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entitiesVetor.Aluguel;
+
+public class Quarto {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Quantos estudantes?");
+		int estudantes = sc.nextInt();
+		Aluguel[] vect = new Aluguel[10];
+
+		for (int i = 0; i < estudantes; i++) {
+			sc.nextLine();
+			System.out.println("Quarto número "+i+": ");
+			System.out.println("Digite o nome do locatário: ");
+			String nome = sc.nextLine();
+			System.out.println("Digite o email: ");
+			String email = sc.nextLine();
+			System.out.println("Digite o número do quarto: ");
+			int quarto = sc.nextInt();
+			vect[quarto] = new Aluguel(nome, email);
+
+		}
+
+		for (int i = 0; i < vect.length; i++) {
+			if (vect[i] != null) {
+				System.out.println("Quarto:" + i + vect.toString());
+			}
+		}
+
+		sc.close();
+	}
+
+}

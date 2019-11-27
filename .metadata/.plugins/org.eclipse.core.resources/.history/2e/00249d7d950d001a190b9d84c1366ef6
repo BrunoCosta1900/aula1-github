@@ -1,0 +1,9 @@
+package entitiesVetor;
+
+public class Aluguel {
+ 
+	private String nome;
+	private String email;
+	private int quarto;
+	
+}

@@ -1,0 +1,21 @@
+package apploication;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class triangle {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		double xA, xB, xC, yA, yB, yC;
+		double p = (xA + xB + xC) / 2.0;
+
+		double area;
+
+		sc.close();
+	}
+
+}

@@ -1,0 +1,10 @@
+
+public class vetorForDo {
+
+	public static void main(String[] args) {
+
+		String[] vect = new String[] { "Maria", "Joao", "Pedro" };
+
+	}
+
+}

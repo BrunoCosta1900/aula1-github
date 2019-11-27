@@ -1,0 +1,15 @@
+package application;
+
+import entities.Student;
+
+public class Program4 {
+
+	public static void main(String[] args) {
+		
+		Student student = new Student();
+		
+		Student.nome = sc.nextLine();
+		
+	}
+
+}

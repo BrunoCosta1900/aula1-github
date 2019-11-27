@@ -1,0 +1,50 @@
+package entities;
+
+public class Banco {
+
+	private int conta;
+	private String nome;
+	private double valorInicial;
+
+	public Banco() {
+	}
+
+	public Banco(int conta, String nome, double valorInicial) {
+		this.conta = conta;
+		this.nome = nome;
+		this.valorInicial = valorInicial;
+	}
+
+	public int getConta() {
+		return conta;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public double getValorInicial() {
+		return valorInicial;
+	}
+
+	public void setValorInicial(double valorInicial) {
+		this.valorInicial = valorInicial;
+	}
+
+	public void depositValue(double depositValue) {
+		this.depositValue(depositValue);
+	}
+	
+	public double addMoney() {
+		return valorInicial + depositValue; 
+	}
+	
+	public double removeMoney() {
+		return 
+	}
+	
+}

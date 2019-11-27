@@ -1,0 +1,50 @@
+package entities;
+
+public class Banco {
+
+	private int conta;
+	private String nome;
+	private double valorEmConta;
+	
+	private double addMoney;
+	private double removeMoney;
+	
+	public Banco() {
+	}
+
+	public Banco(int conta, String nome, double valorEmConta) {
+	
+		this.conta = conta;
+		this.nome = nome;
+		this.valorEmConta = valorEmConta;
+	}
+
+	public int getConta() {
+		return conta;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public double getValorEmConta() {
+		return valorEmConta;
+	}
+
+	public void setValorEmConta(double valorEmConta) {
+		this.valorEmConta = valorEmConta;
+	}
+	
+	public double totalMoneyInAcoount() {
+		return valorEmConta;
+	}
+	
+	public void addMoney(double addMoney) {
+		this.valorEmConta += addMoney;
+	}
+	
+}

@@ -1,0 +1,9 @@
+package entities;
+
+public class Bank {
+
+	private int conta;
+	private String nome;
+	private double valorEmConta;
+
+}

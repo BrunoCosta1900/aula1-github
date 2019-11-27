@@ -1,0 +1,31 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+
+
+public class Program3 {
+
+	public static void main(String[] args) {
+
+		
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Número da conta: ");
+		int conta = sc.nextInt();
+		sc.nextLine();
+		
+		System.out.println("Proprietário: ");
+		String nome = sc.nextLine();
+		System.out.println();
+		
+		System.out.println("Deseja fazer um deposito inicial (y/n)?");
+				
+		
+		sc.close();
+	}
+
+}

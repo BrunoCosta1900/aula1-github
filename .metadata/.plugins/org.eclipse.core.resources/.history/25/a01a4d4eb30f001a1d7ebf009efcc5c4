@@ -1,0 +1,12 @@
+package util;
+
+public class Matrizes {
+
+	public int x;
+
+	public Matrizes(int x) {
+
+		this.x = x;
+	}
+
+}

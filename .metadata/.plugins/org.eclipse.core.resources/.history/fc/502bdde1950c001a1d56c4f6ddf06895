@@ -1,0 +1,30 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import util.Calculator;
+
+public class Program5 {
+
+	public static void main(String[] args) {
+
+		Calculator calc = new Calculator();
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter radius: ");
+		double radius = sc.nextDouble();
+
+		double c = Calculator.circumference(radius);
+
+		double v = Calculator.volume(radius);
+
+		System.out.println(c);
+		System.out.println(v);
+		System.out.println(Calculator.PI);
+		sc.close();
+	}
+
+}

@@ -1,0 +1,55 @@
+package util;
+
+public class Matrizes {
+
+	public Integer x;
+	public Integer m;
+	public Integer n;
+
+	public Matrizes(Integer x) {
+
+		this.x = x;
+	}
+
+	public Matrizes(Integer x, Integer m) {
+
+		this.x = x;
+		this.m = m;
+	}
+
+	public Matrizes(Integer x, Integer m, Integer n) {
+
+		this.x = x;
+		this.m = m;
+		this.n = n;
+	}
+
+	public Integer getX() {
+		return x;
+	}
+
+	public void setX(Integer x) {
+		this.x = x;
+	}
+
+	public Integer getM() {
+		return m;
+	}
+
+	public void setM(Integer m) {
+		this.m = m;
+	}
+
+	public Integer getN() {
+		return n;
+	}
+
+	public void setN(Integer n) {
+		this.n = n;
+	}
+
+	public String toString() {
+		return "Matrizes [x=" + x + "]";
+	}
+
+}

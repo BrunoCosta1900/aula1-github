@@ -1,0 +1,24 @@
+package application;
+
+import java.util.Scanner;
+
+import entities.Aluguel;
+
+public class Pensionato {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		int estudantes = sc.nextInt();
+		Aluguel[] vect = new Aluguel[10];
+
+		for (int i = 1; i <= estudantes; i++) {
+			
+
+		}
+
+		sc.close();
+	}
+
+}

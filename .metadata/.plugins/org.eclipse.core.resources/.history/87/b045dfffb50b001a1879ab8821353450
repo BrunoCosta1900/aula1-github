@@ -1,0 +1,23 @@
+package apploication;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class triangle {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Insira as medidas do triangulo X e do Y: ");
+
+		double xA, xB, xC, yA, yB, yC = sc.nextDouble();
+
+		double p = (xA + xB + xC) / 2.0;
+		double areaX = Math.sqrt(p * (p - xA) * (p - xB) * (p - xC));
+
+		sc.close();
+	}
+
+}

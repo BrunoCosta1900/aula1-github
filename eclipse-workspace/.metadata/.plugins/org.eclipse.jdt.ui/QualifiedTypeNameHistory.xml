@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="javax.imageio.ImageIO"/>
+<fullyQualifiedTypeName name="java.awt.Graphics"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.bgstudios.main.Game"/>
+<fullyQualifiedTypeName name="com.bgstudios.entities.Entity"/>
+<fullyQualifiedTypeName name="com.bgstudios.entities.Enemy"/>
+<fullyQualifiedTypeName name="com.bgstudios.entities.Weapon"/>
+<fullyQualifiedTypeName name="com.bgstudios.world.Camera"/>
+<fullyQualifiedTypeName name="com.bgstudios.world.World"/>
+</qualifiedTypeNameHistroy>

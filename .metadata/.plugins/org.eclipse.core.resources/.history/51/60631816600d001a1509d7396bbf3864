@@ -1,0 +1,16 @@
+package entities;
+
+public class Banco {
+
+	private int conta;
+	private String nome;
+	private double valorEmConta;
+
+	public Banco(int conta, String nome, double valorEmConta) {
+
+		this.conta = conta;
+		this.nome = nome;
+		this.valorEmConta = valorEmConta;
+	}
+
+}

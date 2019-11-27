@@ -1,0 +1,14 @@
+package entities;
+
+public class Triangle {
+
+	double a;
+	double b;
+	double c;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

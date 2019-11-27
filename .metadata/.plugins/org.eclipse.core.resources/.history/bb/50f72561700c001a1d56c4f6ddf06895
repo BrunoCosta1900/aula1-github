@@ -1,0 +1,34 @@
+package apploication;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Products;
+
+public class Program2 {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		Products products = new Products();
+
+		System.out.println("Nome do produto: ");
+		products.name = sc.next();
+		System.out.println("Preço do produto: ");
+		products.price = sc.nextDouble();
+		System.out.println("Quantidade: ");
+		products.quantity = sc.nextInt();
+
+		System.out.println(products);
+
+		int quantity = sc.nextInt();
+		products.addProducts(quantity);
+
+		System.out.println("Produtos atualizados" + products);
+
+		sc.close();
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;MainRetro&apos; to &apos;Random&apos;&#x0D;&#x0A;- Original project: &apos;Estudos&apos;&#x0D;&#x0A;- Original element: &apos;MainRetro&apos;&#x0D;&#x0A;- Renamed element: &apos;Random&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Rename similarly named elements&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;MainRetro&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{MainRetro.java[MainRetro" matchStrategy="1" name="Random" qualified="false" references="true" similarDeclarations="true" stamp="1574189463494" textual="false" version="1.0"/>
+</session>

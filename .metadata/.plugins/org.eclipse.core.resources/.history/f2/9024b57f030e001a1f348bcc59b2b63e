@@ -1,0 +1,62 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Arrays {
+
+	public static void main(String[] args) {
+
+		List<String> list = new ArrayList<>();
+
+		list.add("Maria");
+		list.add("Angua");
+		list.add("Paulo");
+		list.add("Alex");
+		list.add("Thiago");
+		list.add("Bob");
+		list.add("Amélia");
+		list.add("Potiguar");
+		list.add("Ana");
+		list.add("Joao");
+		list.add("Marco");
+		list.add("Pedro");
+
+		list.add(5, "Lucas");
+
+		System.out.println(list.size());
+
+		for (String nome : list) {
+			System.out.println(nome);
+		}
+
+		System.out.println("------------------");
+
+		list.removeIf(nome -> nome.charAt(0) == 'M');
+		list.remove(1);
+		for (String nome : list) {
+			System.out.println(nome);
+		}
+		System.out.println(list.size());
+
+		System.out.println("------------------");
+
+		System.out.println("Index of Bob: " + list.indexOf("Bob"));
+		System.out.println("Index of Marco: " + list.indexOf("Marco"));
+
+		System.out.println("------------------");
+
+		list.removeIf(nome -> nome.charAt(0) != 'A');
+
+		for (String nome : list) {
+			//System.out.println(nome);
+		}
+		
+		/*System.out.println("------------------");
+
+		List<String> result = list.stream().filter(nome -> nome.charAt(0) == 'A').collect(Collectors.toList());
+		for (String nome : result) {
+			System.out.println(nome);
+		}
+	}
+*/
+}

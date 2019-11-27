@@ -1,0 +1,10 @@
+package entitiesVetor;
+
+public class ProgramaFuncionarios {
+	
+	private int id;
+	private String nome;
+	private double salario;
+	
+
+}

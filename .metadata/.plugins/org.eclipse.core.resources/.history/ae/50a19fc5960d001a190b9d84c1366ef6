@@ -1,0 +1,29 @@
+package exercicioVetor;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entitiesVetor.Aluguel;
+
+public class Quarto {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		int estudantes = sc.nextInt();
+		Aluguel[] vect = new Aluguel[estudantes];
+
+		for (int i = 0; i < vect.length; i++) {
+			sc.nextLine();
+			String nome = sc.nextLine();
+			String email = sc.nextLine();
+			int quarto = sc.nextInt();
+			vect[i] = new Aluguel(nome, email, quarto);
+		}
+
+		sc.close();
+	}
+
+}

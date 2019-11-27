@@ -1,0 +1,10 @@
+package com.bgstudios.graficos;
+
+public class Spritesheet {
+	
+	public Spritesheet() 
+	{
+		
+	}
+
+}

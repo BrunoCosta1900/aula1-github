@@ -1,0 +1,9 @@
+package com.gmstudios.world;
+
+import com.bgstudios.main.Game;
+
+public class Tile {
+
+	public BufferedeImage TILE_FLOOR = Game.spritesheet.getSprite(0, 0, 16, 16);
+	
+}

@@ -1,0 +1,15 @@
+package com.bgstudios.graficos;
+
+import java.awt.image.BufferedImage;
+
+public class Spritesheet {
+	
+	private BufferedImage spritesheet;
+	
+	
+	public Spritesheet(String path) 
+	{
+		
+	}
+
+}

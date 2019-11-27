@@ -1,0 +1,16 @@
+package util;
+
+public class CurrencyConverter {
+
+	public static double price;
+	public static double quant;
+	
+	
+	public  double IOF() {
+		return 6/100 * price * quant;
+	}
+	
+	public static double paid () {
+		return price * quant + IOF();
+	}
+}
